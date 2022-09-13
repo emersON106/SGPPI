@@ -9,5 +9,7 @@ scipy (==1.5.2)
 scikit-learn (==0.24.2)  
 dgl (0.7.2)  
 numpy (==1.19.1)  
-## Dataset
-The dataset and PDB files used in our research are available at 10.6084/m9.figshare.20353353
+## Graph convolutional neural network
+In SGPPI, we used GCN to cpature the hidden features of protein structures. The graph used here is the residue contact map with the threshold of 10Å. Features of the node including the pssm profiles, second structure and Jet2 features. To use SGPPI, users should prepare the  adjacency matrix of the graph and the feature list of the residues. 
+## Features
+We used Jet2 to calculate the global and local features of protein structures. All the features are available at DOI: 10.6084/m9.figshare.20353353.
