@@ -27,4 +27,4 @@ python adjmatrix_extract.py –i pdb_file –o adjacent_matrix
 ```
 ## Store the features and adjacency matrix of all sample proteins
 # Acknowledgments
-We would like to thank the [DGL] team (https://github.com/dmlc/dgl) for the source code of GCN part.
+We would like to thank the [DGL](https://github.com/dmlc/dgl) team for the source code of GCN part.
