@@ -16,12 +16,12 @@ In SGPPI, we used GCN to cpature the hidden features of protein structures. The 
 SGPPI regard the protein as collection of protein interface patches and integrated the global and local structural features of each residue in these patches. Besides, a comprehensive set of protein sequence and structural features are considered: a) evolutionary information of the residue through position-specific scoring matrices (PSSMs); b) location in the underlying protein secondary structure; c) global and local geometrical descriptors.
 To use SGPPI, you should first calculate all the needed features of proteins. We have published the calculated features of both human and yeast proteins, you can find them at https://figshare.com/articles/dataset/PDB_files/20353353. The features mainly include the following files: *.atomAxs, *.axs, *.clusters, *.cv, *.cvlocal and *.pssm. Use feature_extract.py to generate the features of the corresponding protein.
 
-```shell
-feature_extract.py –i protein_name –o protein_features
+```python
+python feature_extract.py –i protein_name –o protein_features
 ```
 ## Get Adjacent Matrix
 SGPPI consider a contact if the geometrical distance of any two residues’ Cα atoms is less than a certain threshold (default 10 Å), allowing us to represent a protein structure by an undirected graph of the included surface/patch residues. Use adjmatrix_extract.py to generate the adjacent matrix of the corresponding protein structure.
 
-```shell
-adjmatrix_extract.py –i pdb_file –o adjacent_matrix
+```python
+python adjmatrix_extract.py –i pdb_file –o adjacent_matrix
 ```
