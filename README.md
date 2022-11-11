@@ -19,3 +19,9 @@ To use SGPPI, you should first calculate all the needed features of proteins. We
 ```shell
 feature_extract.py –i protein_name –o protein_features
 ```
+## Get Adjacent Matrix
+SGPPI consider a contact if the geometrical distance of any two residues’ Cα atoms is less than a certain threshold (default 10 Å), allowing us to represent a protein structure by an undirected graph of the included surface/patch residues. Use adjmatrix_extract.py to generate the adjacent matrix of the corresponding protein structure.
+
+```shell
+adjmatrix_extract.py –i pdb_file –o adjacent_matrix
+```
