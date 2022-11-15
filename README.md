@@ -26,5 +26,10 @@ SGPPI consider a contact if the geometrical distance of any two residues’ Cα 
 python adjmatrix_extract.py –i pdb_file –o adjacent_matrix
 ```
 ## Store the features and adjacency matrix of all sample proteins
+Before starting, users should prepare two files: sample_adj.pkl and sample_fea.pkl corresponding to the dictionary of sample adjacency matrix and sample features. Use SaveToDict.py generate these two files. Before running the script, you need to prepare a list of all the samples’ names, and then modify the sampleList in the script. If your sample contains two proteins: P14859 and Q5SXM2, please modify the list in the script to sampleList = ['P14859','Q5SXM2'] and then run the script:
+
+```python
+python SaveToDict.py
+```
 # Acknowledgments
 We would like to thank the [DGL](https://github.com/dmlc/dgl) team for the source code of GCN part.
