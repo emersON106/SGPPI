@@ -18,5 +18,5 @@ for filename in sampleList:
         pass
 with open(rootdir+"sample_adj.pkl",'wb') as outfile:
     pkl.dump(dict_adj,outfile)
-with open(rootdir+"sample_fea_.pkl",'wb') as outfile:
+with open(rootdir+"sample_fea.pkl",'wb') as outfile:
     pkl.dump(dict_fea,outfile)
