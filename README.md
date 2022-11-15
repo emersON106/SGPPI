@@ -31,5 +31,6 @@ Before starting, users should prepare two files: sample_adj.pkl and sample_fea.p
 ```python
 python SaveToDict.py
 ```
+After running, two *.pkl files will be obtained, which will be used for the training and prediction of the model in the next step.
 # Acknowledgments
 We would like to thank the [DGL](https://github.com/dmlc/dgl) team for the source code of GCN part.
