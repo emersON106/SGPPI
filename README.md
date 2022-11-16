@@ -7,7 +7,13 @@ structural features of protein interactions across various species.
 In SGPPI, we used GCN to cpature the hidden features of protein structures. The graph used here is the residue contact map with the threshold of 10Å. Features of the node including the pssm profiles, second structure and Jet2 features. To use SGPPI, users should prepare the  adjacency matrix of the graph and the feature list of the residues. 
 # USAGE
 ## Dataset
-We provided a 10-fold cross-validation splits for three baseline datasets: Profkernelppi human dataset, HuRI dataset and filtered Pan’s dataset. In each split, we provided positive training set, negative training set, positive test set and negative test set. Each data set contains two columns, which are the input two proteins. In the SGPPI model, we set the label of the positive sample to 1 and the label of the negative sample to 0.
+We provided a 10-fold cross-validation splits for three baseline datasets: Profkernelppi human dataset, HuRI dataset and filtered Pan’s dataset. In each split, we provided positive training set, negative training set, positive test set and negative test set. You can find all the datasets used in SGPPI from three datasets folders and the form of the dataset is as follows:
+| Protein A | Protein B |
+| :-------- | -------  | 
+|O15015|P53582|
+|Q9NZC7|Q8IY17|
+|Q9UK11|O43795|
+Each data set contains two columns, which are the input two proteins.  In the SGPPI model, we set the label of the positive sample to 1 and the label of the negative sample to 0.
 ## Requirements
 torch (==1.5.0)  
 scipy (==1.5.2)  
