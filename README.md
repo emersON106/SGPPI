@@ -22,10 +22,10 @@ To use SGPPI, you should first calculate all the needed features of proteins. We
 python feature_extract.py –i protein_name –o protein_features
 ```
 ## Get Adjacent Matrix
-SGPPI consider a contact if the geometrical distance of any two residues’ Cα atoms is less than a certain threshold (default 10 Å), allowing us to represent a protein structure by an undirected graph of the included surface/patch residues. Use adjmatrix_extract.py to generate the adjacent matrix of the corresponding protein structure.
+SGPPI consider a contact if the geometrical distance of any two residues’ Cα atoms is less than a certain threshold (default 10 Å), allowing us to represent a protein structure by an undirected graph of the included surface/patch residues. Use adjmatrix_extract.py to generate the adjacent matrix of the corresponding protein structure. **Please note: `Human_RSA0.2.pkl` or `Yeast_RSA0.2.pkl` should be in the same file directory as "adjmatrix_extract.py". Use the parameter -s to select the species**
 
 ```python
-python adjmatrix_extract.py –i pdb_file –o adjacent_matrix
+python adjmatrix_extract.py –i pdb_file –o adjacent_matrix -s human
 ```
 ## Store the features and adjacency matrix of all sample proteins
 Before starting, users should prepare two files: sample_adj.pkl and sample_fea.pkl corresponding to the dictionary of sample adjacency matrix and sample features. Use SaveToDict.py generate these two files. Before running the script, you need to prepare a list of all the samples’ names, and then modify the sampleList in the script. If your sample contains two proteins: P14859 and Q5SXM2, please modify the list in the script to sampleList = ['P14859','Q5SXM2'] and then run the script:
