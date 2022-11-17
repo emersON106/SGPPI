@@ -48,14 +48,12 @@ Use `train_model.py` to train the SGPPI model.
 ```python
 python train_model.py -e 20 -l 0.0005 -o model0
 ```
-In the source code, we provide the seed for users to repeat our results. The default dataset is the first  cross validation data of HuRI dataset. If you want to modify the data set, please change to the target dataset path at the corresponding position of the source code. <br />
+In the source code, we provide the seed for users to repeat our results. The default dataset is the first  cross validation data of HuRI dataset. If you want to modify the data set, please change to the target dataset path at the corresponding position of the source code. <br /><br />
 At the same time, we also uploaded all the models used in the paper, which you can find in three `models` folders or at [figshare](https://figshare.com/articles/software/SGPPI_models_rar/21564036). To use these models directly, please use pytorch load as follows:
 
 ```python
 torch.load("model.pt")
 ```
-<br />
-<br />
-<br />
+
 # Acknowledgments
 We would like to thank the [DGL](https://github.com/dmlc/dgl) team for the source code of GCN part.
