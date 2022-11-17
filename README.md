@@ -27,12 +27,12 @@ SGPPI regard the protein as collection of protein interface patches and integrat
 To use SGPPI, you should first calculate all the needed features of proteins. We have published the calculated features of both human and yeast proteins, you can find them at [figshare](https://figshare.com/articles/dataset/PDB_files/20353353). The features mainly include the following files: `.atomAxs`, `.axs`, `.clusters`, `.cv` , `.cvlocal` and `.pssm`.<br /> 
 | Features | Description |
 | ------ | ------  | 
-|atomAxs|accessibility at atomic level|
-|axs|accessibility at residue level|
-|clusters|potential protein interaction interface|
-|cv|global circular variances|
-|cvlocal|local circular variances|
-|pssm|position-specific scoring matrices|
+|`.atomAxs`|accessibility at atomic level|
+|`.axs`|accessibility at residue level|
+|`.clusters`|potential protein interaction interface|
+|`.cv`|global circular variances|
+|`.cvlocal`|local circular variances|
+|`.pssm`|position-specific scoring matrices|
 
 
 Use feature_extract.py to generate the features of the corresponding protein. **Please note: `dssp.txt` and all the feature files should be in the same file directory as "feature_extract.py".**
