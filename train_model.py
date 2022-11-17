@@ -63,7 +63,7 @@ train_ppi = []
 train_label = []
 test_ppi = []
 test_label = []
-with open("HuRI/0.train.pos") as infile:
+with open("HuRI example dataset/0.train.pos") as infile:
     for line in infile:
         if len(line)<10:
             continue
@@ -71,7 +71,7 @@ with open("HuRI/0.train.pos") as infile:
         if linea[0] in dict_adj.keys() and linea[1] in dict_adj.keys():
             train_ppi.append((linea[0],linea[1]))
             train_label.append(1)
-with open("HuRI/0.train.neg") as infile:
+with open("HuRI example dataset/0.train.neg") as infile:
     for line in infile:
         if len(line)<10:
             continue
@@ -79,7 +79,7 @@ with open("HuRI/0.train.neg") as infile:
         if linea[0] in dict_adj.keys() and linea[1] in dict_adj.keys():
             train_ppi.append((linea[0],linea[1]))
             train_label.append(0)
-with open("HuRI/0.test.pos") as infile:
+with open("HuRI example dataset/0.test.pos") as infile:
     for line in infile:
         if len(line)<10:
             continue
@@ -87,7 +87,7 @@ with open("HuRI/0.test.pos") as infile:
         if linea[0] in dict_adj.keys() and linea[1] in dict_adj.keys():
             test_ppi.append((linea[0],linea[1]))
             test_label.append(1)
-with open("HuRI/0.test.neg") as infile:
+with open("HuRI example dataset/0.test.neg") as infile:
     for line in infile:
         if len(line)<10:
             continue
